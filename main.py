@@ -18,21 +18,13 @@ def pidr(value1, value1_c, value2):
 class Sum:
 
     def vl(self):
-        try:
-            value1 = input(" 1.Доллар\n 2.Евро\n 3.Рубль\n 4.Сум\n Выберите валюту: ")
-            value1_c = int(input("Введите значение: "))
-        except KeyError:
-            print("Введите верный ключ")
+        value1 = input(" 1.Доллар\n 2.Евро\n 3.Рубль\n 4.Сум\n Выберите валюту: ")
+        value1_c = int(input("Введите значение: "))
         value2 = input("Выберите валюту: ")
-        value[value1][value2]
         print(pidr(value1,value1_c,value2))
 
 
-
-A = Sum()
-A.vl()
-
-
-
-
+if __name__ == '__main__':
+    A = Sum()
+    A.vl()
 
